@@ -1,0 +1,8 @@
+<h2>Product Inventory</h2>
+<table>
+  <tr *ngFor="let product of products">
+    <td>{{ product.name }}</td>
+    <td>{{ product.price | currency }}</td>
+    <td>{{ product.stock }}</td>
+  </tr>
+</table>
